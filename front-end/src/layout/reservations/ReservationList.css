@@ -1,0 +1,103 @@
+.reservations-list {
+  padding-right: 20px;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.reservation {
+  min-width: 100%;
+  list-style: none;
+  padding: 2em;
+  border: 1px solid #102520;
+  border-radius: 5px;
+  background-color: #96795d;
+  font-size: 17px;
+}
+
+.reservation hr {
+  border: 1px solid #96795d;
+}
+
+.button-box button:hover,
+.button-box button:focus {
+  border: 1px solid #dd913d;
+  color: #dd913d;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.button-box button:active,
+.button-box a:active {
+  text-decoration: none;
+  color: #23b492;
+  border: 1px solid #23b492;
+}
+
+.button-box button:visited,
+.button-box a:visited {
+  text-decoration: none;
+  color: #23b492;
+}
+
+.reservation:focus,
+.reservation:hover {
+  border: 1px solid #dd913d;
+  color: #dd913d;
+  transition: 0.5s;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 4px;
+}
+
+.button-box a,
+.button-box button {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #102520;
+  border-radius: 5px;
+  background-color: #3d210f;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.button-box a:focus,
+.button-box a:hover {
+  border: 1px solid #dd913d;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.button-box button {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 992px) {
+  .reservations-list {
+    padding-right: 40px;
+  }
+
+  .reservation {
+    padding: 2em;
+    margin: 2em;
+    border: 1px solid #102520;
+    border-radius: 5px;
+    min-width: 100%;
+    font-size: 1.5em;
+  }
+
+  .button-box button,
+  .button-box a {
+    display: inline;
+    padding: 10px 50px;
+  }
+}

@@ -1,0 +1,23 @@
+body {
+  background-color: #382a1e;
+  color: #fff;
+}
+
+.side-bar {
+  background-color: #3d210f;
+  min-width: 100%;
+  max-height: 0%;
+}
+
+@media all and (max-width: 768px) {
+  .side-bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0;
+  }
+  .nav-link {
+    padding: 0;
+    font-size: 12px;
+  }
+}

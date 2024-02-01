@@ -1,0 +1,60 @@
+routes:
+  - path: "/reservations/new"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/reservations/:reservation_id/seat"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/reservations/:reservation_id/edit"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/reservations"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/tables"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/tables/new"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/dashboard"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/search"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - path: "/"
+    services:
+      - type: web
+        branches:
+          - main
+
+  - status: 404
+    services:
+      - type: web
+        branches:
+          - main

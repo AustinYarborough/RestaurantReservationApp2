@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+.dash-buttons {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dash-buttons button {
+  padding: 20px;
+  background-color: #96795d;
+  border: 1px solid #102520;
+  border-radius: 5px;
+  color: #102520;
+  margin: 5px;
+}
+
+.today-button {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.dash-buttons button:hover,
+.dash-buttons button:focus {
+  border: 1px solid #dd913d;
+  color: #dd913d;
+  transition: 0.5s;
+}
+
+@media all and (min-width: 992px) {
+  h4 {
+    font-size: 2em;
+  }
+
+  .dash-buttons button {
+    padding: 1em;
+    font-size: 1.5em;
+  }
+
+  .dash-buttons {
+    padding-top: 1em;
+  }
+}
